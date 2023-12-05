@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../../ProjetosPHP/Pastelaria/www/Pastelaria/routes/web.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.env" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseCreate.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseEdit.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseList.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Payment/CreditCard.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Plan/PlanCreate.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Plan/PlanList.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/Category.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/Expense.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/Feature.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/Plan.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/User.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/UserPlan.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/app.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/database.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/pagseguro.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095729_create_expenses_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095810_create_plans_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095825_create_features_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095912_create_user_plans_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095939_create_categories_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_11_30_064855_alter_expenses_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/includes/message.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/layouts/guest.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/_old.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-create.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-create_old.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-edit._oldblade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-edit.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-edit_old.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-list.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-list1.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/expense/expense-list_old.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/payment/credit-card.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/plan/plan-create.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/plan/plan-list.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/navigation-menu.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/welcome.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/web.php" charset="UTF-8" />
+  </component>
+</project>
