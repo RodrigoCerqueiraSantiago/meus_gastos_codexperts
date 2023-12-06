@@ -1,11 +1,11 @@
-<div class="max-w-7xl mx-auto py-15 px-4" x-data="creditCard()">
+<div class="max-w-7xl mx-auto py-15 px-4" x-data="creditCard()" x-init="PagSeguroDirectPayment.setSessionId('{{$sessionId}}')">
 
     @include('includes.message')
 
     <div class="flex flex-wrap -mx-3 mb-6">
 
         <h2 class="w-full px-3 mb-6 border-b-2 border-cool-gray-800 pb-4">
-            Realizar Pagamento Assinatura
+            Realizar Pagamento Assinatura -
         </h2>
     </div>
 
@@ -15,7 +15,7 @@
 
             <p class="w-full px-3 mb-6">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Número Cartão</label>
-                <input @keyup="keyUpInput" type="text" name="card_number" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                <input @keyup="getBrand" type="text" name="card_number" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </p>
 
             <p class="w-full px-3 mb-6">
@@ -47,22 +47,39 @@
             </p>
 
             <p class="w-full py-4 px-3 mb-6">
-                <button @click.prevent="clickButton" type="submit" class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded">Realizar Assinatura</button>
+                <button @click.prevent="cardToken" type="submit" class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded">Realizar Assinatura</button>
             </p>
 
         </div>
 
     </form>
 
+    <!-- essa importação gera esse erro no console do browser:
+    clicklogger_namespace.js:1
+       GET https://clicklogger.rm.uol.com.br/crossdomain.html?appender=&prd=32&grouping=&referrer=http%3A//localhost%3A8000/ 404
+    -->
+    <script type="text/javascript" src="https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.directpayment.js"></script>
 
     <script>
         function creditCard(){
             return{
-                keyUpInput (e) {
-                    console.log(e.target.value);
+                brandName: '',
+                getBrand (e) {
+                    let cardNumber = e.target.value;
+
+                    if(cardNumber.length == 6){
+                        PagSeguroDirectPayment.getBrand({
+                            cardBin: 411111,
+                            success: (response) => {
+                                //bandeira encontrada
+                                this.brandName = response.brand.name;
+                                //alert(response.brand.name);
+                            }
+                        });
+                    }
                 },
-                clickButton(){
-                    alert('Ok button');
+                cardToken(){
+                    console.log(this.brandName);
                 }
             }
         }
