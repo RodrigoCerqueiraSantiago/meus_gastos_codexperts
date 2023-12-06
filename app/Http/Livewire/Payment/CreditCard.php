@@ -10,7 +10,7 @@ class CreditCard extends Component
     public $sessionId;
 
     public function mount(){
-
+/*
         $email = config('pagseguro.email');
         $token = config('pagseguro.token');
         $url = "https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email={$email}&token={$token}";
@@ -18,6 +18,7 @@ class CreditCard extends Component
         $response = simplexml_load_string($response->body());
         $this->sessionId = (string) $response->id;
        // dd($this->sessionId);
+*/
 
     }
     public function render()

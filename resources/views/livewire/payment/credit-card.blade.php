@@ -1,12 +1,12 @@
-<div class="max-w-7xl mx-auto py-15 px-4" x-data="creditCard()"
-     x-init="PagSeguroDirectPayment.setSessionId('{{$sessionId}}')">
+<div class="max-w-7xl mx-auto py-15 px-4" x-data="creditCard()">
 
     @include('includes.message')
 
     <div class="flex flex-wrap -mx-3 mb-6">
 
         <h2 class="w-full px-3 mb-6 border-b-2 border-cool-gray-800 pb-4">
-            Realizar Pagamento Assinatura - {{$sessionId}}
+            Realizar Pagamento Assinatura
+        </h2>
     </div>
 
     <form action="" name="creditCard" class="w-full max-w-7xl mx-auto">
@@ -15,7 +15,7 @@
 
             <p class="w-full px-3 mb-6">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Número Cartão</label>
-                <input @keyup="getBrand" type="text" name="card_number" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                <input @keyup="keyUpInput" type="text" name="card_number" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </p>
 
             <p class="w-full px-3 mb-6">
@@ -55,36 +55,17 @@
     </form>
 
 
-    <script type="text/javascript" src=
-    "https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.directpayment.js"></script>
-
-
     <script>
         function creditCard(){
             return{
-                getBrand(e){
+                keyUpInput (e) {
                     console.log(e.target.value);
-
-                    PagSeguroDirectPayment.getBrand({
-                        cardBin: 411111,
-                        success: function(response) {
-                            //bandeira encontrada
-                            console.log('success '+response);
-                        },
-                        error: function(response) {
-                            //tratamento do erro
-                            console.log('error '+response);
-                        },
-                        complete: function(response) {
-                            //tratamento comum para todas chamadas
-                            console.log('error '+response);
-                        }
-                    });
                 },
-                clickButton(e){
-                    alert('OK button');
+                clickButton(){
+                    alert('Ok button');
                 }
             }
         }
     </script>
+
 </div>
