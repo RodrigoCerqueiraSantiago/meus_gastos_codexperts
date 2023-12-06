@@ -78,8 +78,25 @@
                         });
                     }
                 },
-                cardToken(){
-                    console.log(this.brandName);
+                cardToken(e){
+
+                    let formEl = document.querySelector('form[name=creditCard]');
+                    let formData = new FormData(formEl);
+
+                    PagSeguroDirectPayment.createCardToken({
+                        cardNumber: formData.get('card_number'), // Número do cartão de crédito
+                        brand: this.brandName, // Bandeira do cartão
+                        cvv: formData.get('card_cvv'), // CVV do cartão
+                        expirationMonth: formData.get('card_month'), // Mês da expiração do cartão
+                        expirationYear: formData.get('card_year'), // Ano da expiração do cartão, é necessário os 4 dígitos.
+                        success: function(response) {
+                            let payload = {
+                                'token': response.card.token,
+                                'senderHash': PagSeguroDirectPayment.getSenderHash()
+                            }
+                            console.log(payload);
+                        }
+                    });
                 }
             }
         }
