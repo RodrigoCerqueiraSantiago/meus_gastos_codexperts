@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8b12b183-43a2-41de-95fb-4ec5d8e43826" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Credentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionReaderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Payment/CreditCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Payment/CreditCard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UserPlan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserPlan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/pagseguro.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/pagseguro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/payment/credit-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/payment/credit-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,12 +205,23 @@
       <workItem from="1701017014150" duration="19000" />
       <workItem from="1701017034123" duration="10685000" />
       <workItem from="1701186616607" duration="668000" />
-      <workItem from="1701195531878" duration="108395000" />
+      <workItem from="1701195531878" duration="126548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="351" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1701339071744">
@@ -192,18 +232,18 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="562" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1701392989639" />
-    <state x="908" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1701523694418">
+    <state x="908" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1701868681863">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="908" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.816@0.0.1536.816" timestamp="1701523694418" />
+    <state x="908" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.816@0.0.1536.816" timestamp="1701868681863" />
     <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1701195505299">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1701195505299" />
-    <state x="465" y="131" key="NewPhpClassDialog" timestamp="1701523538295">
+    <state x="465" y="131" key="NewPhpClassDialog" timestamp="1701867904754">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="465" y="131" key="NewPhpClassDialog/0.0.1536.816@0.0.1536.816" timestamp="1701523538295" />
+    <state x="465" y="131" key="NewPhpClassDialog/0.0.1536.816@0.0.1536.816" timestamp="1701867904754" />
     <state x="555" y="53" key="SettingsEditor" timestamp="1701175603215">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

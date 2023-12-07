@@ -62,4 +62,11 @@ Route::middleware(['auth:sanctum','verified'])->group(function () {
     });
 });
 
-Route::get('subscription',\App\Http\Livewire\Payment\CreditCard::class)->name('plan.subscription');
+Route::get('subscription/{plan:slug}',\App\Http\Livewire\Payment\CreditCard::class)
+    ->name('plan.subscription')
+    ->middleware('auth:sanctum');
+
+Route::get('/notification', function(){
+    $code = 'F85D58F49B9BB85444119F8748F8068D';
+    return (new \App\Services\PagSeguro\Subscription\SubscriptionReaderService())->getSubscriptionByCode($code);
+});

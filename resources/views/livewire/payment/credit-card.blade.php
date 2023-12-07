@@ -5,7 +5,7 @@
     <div class="flex flex-wrap -mx-3 mb-6">
 
         <h2 class="w-full px-3 mb-6 border-b-2 border-cool-gray-800 pb-4">
-            Realizar Pagamento Assinatura -
+            Realizar Pagamento Assinatura, Plano Escolhido <b>{{$plan->name}}</b>
         </h2>
     </div>
 
@@ -95,6 +95,7 @@
                                 'senderHash': PagSeguroDirectPayment.getSenderHash()
                             }
                             console.log(payload);
+                           // Livewire.emit('paymentData', payload);
                         }
                     });
                 }

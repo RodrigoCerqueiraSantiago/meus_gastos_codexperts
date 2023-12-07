@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../../../../ProjetosPHP/Pastelaria/www/Pastelaria/routes/web.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.env" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.env.example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseCreate.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseEdit.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Livewire/Expense/ExpenseList.php" charset="UTF-8" />
@@ -15,7 +16,10 @@
     <file url="file://$PROJECT_DIR$/app/Models/Plan.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Models/User.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Models/UserPlan.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Services/PagSeguro/Credentials.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionReaderService.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionService.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/app.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/database.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/pagseguro.php" charset="UTF-8" />
@@ -25,6 +29,7 @@
     <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095912_create_user_plans_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2023_11_28_095939_create_categories_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2023_11_30_064855_alter_expenses_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2023_12_06_124324_alter_user_plan_table_add_columns_status_and_date.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/js/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" charset="UTF-8" />
