@@ -17,6 +17,9 @@ class CreditCard extends Component
 
     public Plan $plan;
 
+    /*EVENTO QUE ESCUTARÁ NA VIEW = 'paymentData'
+        EXECUTA O MÉTODO = proccessSubscription
+    */
     protected $listeners = [
         'paymentData' => 'proccessSubscription'
     ];
@@ -34,12 +37,8 @@ class CreditCard extends Component
 
         $data['plan_reference'] = $this->plan->reference;
         $makeSubscription = (new SubscriptionService($data))->makeSubscription();
-
-
-
         //Pegar o usuário autenticado
         $user = auth()->user();
-
         //Criar plano localmente
         $user->plan()->create([
             'plan_id' => $this->plan->id,
@@ -50,6 +49,10 @@ class CreditCard extends Component
         ]);
 
         session()->flash('message','Plano aderido com Sucesso');
+
+
+        //DISPARANDO O EVENTO DE DENTRO DO COMPONENT
+        $this->emit('subscriptionFinished');
     }
 
     public function render()

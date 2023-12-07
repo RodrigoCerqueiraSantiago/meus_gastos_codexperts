@@ -16,23 +16,19 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Livewire_na_Prática»54-Ajustes_Tela_Adesão" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b12b183-43a2-41de-95fb-4ec5d8e43826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Credentials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionReaderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Subscription/SubscriptionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Payment/CreditCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Payment/CreditCard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/UserPlan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserPlan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PagSeguro/Plan/PlanCreateService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pagseguro.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/pagseguro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/payment/credit-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/payment/credit-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +201,7 @@
       <workItem from="1701017014150" duration="19000" />
       <workItem from="1701017034123" duration="10685000" />
       <workItem from="1701186616607" duration="668000" />
-      <workItem from="1701195531878" duration="126548000" />
+      <workItem from="1701195531878" duration="129174000" />
     </task>
     <servers />
   </component>
@@ -217,7 +213,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Livewire_na_Prática»54-Ajustes_Tela_Adesão" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -80,6 +80,12 @@
                 },
                 cardToken(e){
 
+                    //Não permitir click no botão enquanto estiver processando o pagseguro
+                    let button = e.target;
+                    button.disabled = true;
+                    button.classList.add('cursor-not-allowed','disabled:opacity-25');
+                    button.textContent = 'Carregando...';
+
                     let formEl = document.querySelector('form[name=creditCard]');
                     let formData = new FormData(formEl);
 
@@ -95,7 +101,14 @@
                                 'senderHash': PagSeguroDirectPayment.getSenderHash()
                             }
                             console.log(payload);
-                           // Livewire.emit('paymentData', payload);
+
+                            //Emitindo evento do javascript pro componente(Credcard - livewire Laravel)
+                            Livewire.emit('paymentData', payload);
+                            //ESCUTANDO O EVENTO subscriptionFinished
+                            Livewire.on('subscriptionFinished', result => {
+                                formEl.reset(); //Limpando o formulário
+                                location.href = '{{route('dashboard')}}';
+                            });
                         }
                     });
                 }
